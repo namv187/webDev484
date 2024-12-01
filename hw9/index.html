@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <main>
+      <header>
+      <h1 id="toggle1">
+        This is your <em>GigaPet</em>
+      </h1>
+      <h1 id="toggle2" style="display:none;">
+          This is your <img class="logo" src="https://cdn.glitch.global/5922e553-3ec9-4634-bce2-03773535eca3/pokemonlogo.png?v=1731477893213">
+      </h1>
+    </header>
+      <section class="pet-image-container">
+         <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" src="https://cdn.glitch.global/5922e553-3ec9-4634-bce2-03773535eca3/zigzagoon.webp?v=1731476240982">
+        <div><p id="message"></p></div>
+      </section>
+      <section class="dashboard">
+        <div class="pet-info-container">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        </div>
+        <div class="button-container">
+          <button class="treat-button">
+            Treat
+          </button>
+          <button class="play-button">
+            Play
+          </button>
+          <button class="exercise-button">
+            Exercise
+          </button>
+          <button class="speak-button">
+            Speak
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="button-container">
+    <button id="toggleButton">Toggle</button>
+    </div>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>

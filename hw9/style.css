@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    /* add background image */
+    background-image: url("https://cdn.glitch.global/5922e553-3ec9-4634-bce2-03773535eca3/pokemon.png?v=1731473996379");
+    background-size: cover; /* stretches to fit the background on page*/
+    background-position: center;/* center the background*/
+    background-repeat: no-repeat; /* no repeating background*/
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    min-height: 100vh; /* Full viewport height */
+}
+
+main {
+    width: 80%; /* the box is 80% of the page*/
+    max-width: 800px; /* a maximum of 800 pixel for it to display properly without being distorted */
+    background-color: rgba(255, 255, 255, 0.8); /* adds a wrapper background thats white and transparent*/
+    padding: 20px;
+    border-radius: 10px; /* rounds the edges */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* adds shadow */
+}
+
+header {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    color: #000;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.logo {
+  max-width:100px;
+}
+
+p {
+    max-width: 600px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+}
+
+footer a {
+    margin: 5px;
+}
+
+.pet-image {
+    height: 250px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.pet-image-container, .dashboard {
+    padding: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 35%;
+    font-size: 15px;
+    background-color: #ff5733;
+    border-color: #632016;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(246,246,246,.1)0%, rgba(30,40,53,0)66%);
+    color: #000000;
+    font-weight: bold;
+}
+
+/* creates a static zone for messages that does not distrub the html page*/
+#message {
+    margin-left:70px;
+    height: 20px;
+    min-height: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #ff5733;
+}
+
+/* fix the button right of the screen */
+#toggleButton{
+    position: fixed;      
+    bottom: 20px;        
+    right: 20px;          
+    padding: 10px 15px; 
+}
+
+/*high lights the pet information box*/
+.pet-info-container {
+    background-color: rgba(192, 192, 192, 0.8); /* adds a wrapper background thats white and transparent*/
+    padding: 10px;
+    border-radius: 10px; /* rounds the edges */
+}
